@@ -102,14 +102,13 @@ font-size:clamp(3rem,7vw,6rem);
 
 font-weight:800;
 
-text-transform:uppercase;
-
 line-height:1;
+
+text-transform:uppercase;
 
 color:var(--gold);
 
 text-shadow:
-
 0 0 35px rgba(244,193,108,.45);
 
 }
@@ -202,7 +201,6 @@ backdrop-filter:blur(15px);
 border:1px solid var(--border);
 
 box-shadow:
-
 0 25px 70px var(--shadow);
 
 }
@@ -233,7 +231,8 @@ align-items:center;
 
 padding:24px 0;
 
-border-bottom:1px solid rgba(244,193,108,.10);
+border-bottom:
+1px solid rgba(244,193,108,.10);
 
 transition:.4s;
 
@@ -244,7 +243,6 @@ transition:.4s;
 padding-left:18px;
 
 background:
-
 rgba(214,139,68,.05);
 
 }
@@ -273,6 +271,20 @@ text-align:right;
 
 }
 
+.chapter-name a{
+
+color:inherit;
+
+text-decoration:none;
+
+}
+
+.chapter-name a:hover{
+
+color:var(--gold);
+
+}
+
 .footer-text{
 
 margin-top:60px;
@@ -286,6 +298,132 @@ font-style:italic;
 color:var(--gold);
 
 opacity:.95;
+
+}
+
+.site-footer{
+
+margin-top:120px;
+
+padding:80px 30px;
+
+background:
+
+linear-gradient(
+180deg,
+#171212,
+#090909
+);
+
+border-top:
+1px solid rgba(244,193,108,.12);
+
+}
+
+.footer-divider{
+
+width:280px;
+
+height:2px;
+
+margin:0 auto 55px;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+position:relative;
+
+}
+
+.footer-divider:after{
+
+content:"✦";
+
+position:absolute;
+
+left:50%;
+
+top:-14px;
+
+transform:translateX(-50%);
+
+padding:0 12px;
+
+background:#171212;
+
+color:var(--gold);
+
+}
+
+.footer-content{
+
+text-align:center;
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+.footer-content h2{
+
+font-family:"Cinzel",serif;
+
+font-size:clamp(2rem,4vw,3rem);
+
+color:var(--gold);
+
+margin-bottom:18px;
+
+}
+
+.footer-subtitle{
+
+color:var(--light);
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:45px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+
+color:var(--amber);
+
+font-family:"Cinzel",serif;
+
+}
+
+.footer-credit{
+
+margin-top:45px;
+
+letter-spacing:4px;
+
+color:var(--gray);
 
 }
 
@@ -315,6 +453,14 @@ font-size:1.4rem;
 
 }
 
+.footer-links{
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
 }
 
 </style>
@@ -326,21 +472,15 @@ font-size:1.4rem;
 <section class="hero">
 
 <h1>
-
 The Rise of a Holy Family II
-
 </h1>
 
 <h2>
-
 A Revival That Breaks Every Label
-
 </h2>
 
 <div class="author">
-
 Written by Bradley Hobbs
-
 </div>
 
 </section>
@@ -350,68 +490,94 @@ Written by Bradley Hobbs
 <section class="contents-box">
 
 <h3 class="contents-title">
-
 Contents
-
 </h3>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 1</div>
-<div class="chapter-name">The Fire Still Burns</div>
+<div class="chapter-name"><a href="chapter1.html">The Fire Still Burns</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 2</div>
-<div class="chapter-name">When Culture Knocks</div>
+<div class="chapter-name"><a href="chapter2.html">When Culture Knocks</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 3</div>
-<div class="chapter-name">The Weight of Labels</div>
+<div class="chapter-name"><a href="chapter3.html">The Weight of Labels</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 4</div>
-<div class="chapter-name">A Collision of Grace and Truth</div>
+<div class="chapter-name"><a href="chapter4.html">A Collision of Grace and Truth</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 5</div>
-<div class="chapter-name">The Breaking Point</div>
+<div class="chapter-name"><a href="chapter5.html">The Breaking Point</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 6</div>
-<div class="chapter-name">Holiness in the Fire</div>
+<div class="chapter-name"><a href="chapter6.html">Holiness in the Fire</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 7</div>
-<div class="chapter-name">Multiplication Through Transformation</div>
+<div class="chapter-name"><a href="chapter7.html">Multiplication Through Transformation</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Chapter 8</div>
-<div class="chapter-name">The Ripple Becomes a Wave</div>
+<div class="chapter-name"><a href="chapter8.html">The Ripple Becomes a Wave</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Epilogue</div>
-<div class="chapter-name">Guarding the Flame</div>
+<div class="chapter-name"><a href="epilogue.html">Guarding the Flame</a></div>
 </div>
 
 <div class="chapter">
 <div class="chapter-number">Appendix</div>
-<div class="chapter-name">Prophetic Declarations</div>
+<div class="chapter-name"><a href="appendix.html">Prophetic Declarations</a></div>
 </div>
 
 <div class="footer-text">
-
 From one flame to a thousand fires
-
 </div>
 
 </section>
+
+<footer class="site-footer">
+
+<div class="footer-divider"></div>
+
+<div class="footer-content">
+
+<h2>The Rise of a Holy Family II</h2>
+
+<p class="footer-subtitle">
+A Revival That Breaks Every Label
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="chapter1.html">Begin Reading</a>
+
+<a href="about.html">About Bradley</a>
+
+</div>
+
+<div class="footer-credit">
+Written by Bradley Hobbs
+</div>
+
+</div>
+
+</footer>
 
 </body>
 </html>
