@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>
+The Rise of a Holy Family II
+</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#090909;
+--bg-alt:#171212;
+--bg-deep:#241E20;
+
+--storm:#322C2F;
+
+--gold:#F4C16C;
+--amber:#D68B44;
+--copper:#9B5A38;
+
+--cream:#F8EBD6;
+--light:#FFF8EF;
+
+--gray:#726867;
+
+--glass:rgba(255,255,255,.04);
+
+--border:rgba(244,193,108,.15);
+
+--shadow:rgba(0,0,0,.65);
+
+}
+
+body{
+
+font-family:
+"Cormorant Garamond",
+serif;
+
+background:
+
+linear-gradient(
+180deg,
+#090909 0%,
+#171212 40%,
+#241E20 100%
+);
+
+color:var(--cream);
+
+overflow-x:hidden;
+
+}
+
+.book-banner{
+
+width:100%;
+
+overflow:hidden;
+
+border-bottom:
+1px solid rgba(
+244,
+193,
+108,
+.15
+);
+
+box-shadow:
+0 30px 70px rgba(
+0,
+0,
+0,
+.7
+);
+
+}
+
+.book-banner img{
+
+width:100%;
+
+display:block;
+
+height:auto;
+
+object-fit:cover;
+
+}
+
+.hero{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:90px 30px;
+
+text-align:center;
+
+}
+
+.hero h2{
+
+font-family:
+"Cinzel",
+serif;
+
+font-size:
+clamp(
+2rem,
+5vw,
+4rem
+);
+
+color:var(--gold);
+
+margin-bottom:30px;
+
+text-shadow:
+
+0 0 25px rgba(
+244,
+193,
+108,
+.35
+);
+
+}
+
+.hero p{
+
+font-size:1.7rem;
+
+line-height:1.8;
+
+max-width:850px;
+
+margin:auto;
+
+color:var(--cream);
+
+}
+
+.divider{
+
+width:280px;
+
+height:2px;
+
+margin:70px auto;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+position:relative;
+
+}
+
+.divider:after{
+
+content:"✦";
+
+position:absolute;
+
+left:50%;
+
+top:-14px;
+
+transform:
+translateX(-50%);
+
+padding:0 12px;
+
+background:var(--bg-main);
+
+color:var(--gold);
+
+}
+
+.section{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:70px 30px;
+
+}
+
+.card{
+
+background:
+var(--glass);
+
+border:
+1px solid var(--border);
+
+backdrop-filter:
+blur(15px);
+
+padding:45px;
+
+border-radius:30px;
+
+margin-bottom:35px;
+
+box-shadow:
+0 15px 40px var(--shadow);
+
+}
+
+.card h3{
+
+font-family:
+"Cinzel",
+serif;
+
+color:var(--gold);
+
+font-size:2rem;
+
+margin-bottom:25px;
+
+}
+
+.card p{
+
+font-size:1.4rem;
+
+line-height:1.8;
+
+}
+
+.button-wrap{
+
+text-align:center;
+
+margin-top:70px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 38px;
+
+border-radius:999px;
+
+text-decoration:none;
+
+font-family:
+"Cinzel",
+serif;
+
+font-size:1rem;
+
+background:
+
+linear-gradient(
+135deg,
+#F4C16C,
+#D68B44
+);
+
+color:#090909;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:
+translateY(-4px);
+
+box-shadow:
+
+0 0 30px rgba(
+244,
+193,
+108,
+.4
+);
+
+}
+
+.site-footer{
+
+margin-top:120px;
+
+padding:80px 30px;
+
+background:
+
+linear-gradient(
+180deg,
+#171212,
+#090909
+);
+
+border-top:
+1px solid rgba(
+244,
+193,
+108,
+.12
+);
+
+position:relative;
+
+}
+
+.footer-divider{
+
+width:280px;
+
+height:2px;
+
+margin:0 auto 55px;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+position:relative;
+
+}
+
+.footer-divider:after{
+
+content:"✦";
+
+position:absolute;
+
+left:50%;
+
+top:-14px;
+
+transform:
+translateX(-50%);
+
+padding:0 12px;
+
+background:#171212;
+
+color:var(--gold);
+
+}
+
+.footer-content{
+
+max-width:1000px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.footer-content h2{
+
+font-family:
+"Cinzel",
+serif;
+
+font-size:
+clamp(
+2rem,
+4vw,
+3rem
+);
+
+color:var(--gold);
+
+margin-bottom:18px;
+
+text-transform:uppercase;
+
+}
+
+.footer-subtitle{
+
+color:var(--light);
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+}
+
+.footer-message{
+
+font-size:1.45rem;
+
+line-height:1.8;
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:45px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:45px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+
+font-family:"Cinzel",serif;
+
+color:var(--amber);
+
+transition:.4s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--gold);
+
+}
+
+.footer-credit{
+
+letter-spacing:4px;
+
+font-size:1rem;
+
+color:var(--gray);
+
+text-transform:uppercase;
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 25px;
+
+}
+
+.hero p{
+
+font-size:1.35rem;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.footer-links{
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="book-banner">
+
+<img
+src="DA15EC0A-5D1B-4B25-A931-27E017461FE4.png"
+alt="The Rise of a Holy Family II">
+
+</section>
+
+<section class="hero">
+
+<h2>
+
+The Story Continues
+
+</h2>
+
+<p>
+
+The Rise of a Holy Family: A Revival Born from Rejection revealed a journey through pain, rejection, and restoration. Voices from the past tried to define identity, yet Jesus began rebuilding what had been broken.
+
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+
+<div class="card">
+
+<h3>
+
+About This Book
+
+</h3>
+
+<p>
+
+Revival still burns. Labels still break. The journey continues through family, faith, healing, and a generation searching for identity.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Themes
+
+</h3>
+
+<p>
+
+Breaking Chains
+
+<br><br>
+
+Identity In Jesus
+
+<br><br>
+
+Family Restoration
+
+<br><br>
+
+Revival Fire
+
+<br><br>
+
+Healing And Freedom
+
+</p>
+
+</div>
+
+<div class="button-wrap">
+
+<a
+href="contents.html"
+class="btn">
+
+Begin Reading
+
+</a>
+
+</div>
+
+</section>
+
+<footer class="site-footer">
+
+<div class="footer-divider"></div>
+
+<div class="footer-content">
+
+<h2>
+
+The Rise of a Holy Family II
+
+</h2>
+
+<p class="footer-subtitle">
+
+A Revival That Breaks Every Label
+
+</p>
+
+<p class="footer-message">
+
+From one flame to a thousand fires, let Your glory fill the earth.
+
+</p>
+
+<nav class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="contents.html">Contents</a>
+
+<a href="chapter1.html">Begin Reading</a>
+
+<a href="about.html">About Bradley</a>
+
+</nav>
+
+<div class="footer-credit">
+
+Written by Bradley Hobbs
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
